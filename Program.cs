@@ -60,7 +60,7 @@
 
 //Переменные для ДЗ
 
-
+int number1, number2;
 
 // Домашнее задание
 
@@ -68,3 +68,11 @@ Console.WriteLine();
 Console.WriteLine("Задача №2.");
 Console.WriteLine();
 
+Console.Write("Введите первое число: ");
+number1 = int.Parse(Console.ReadLine()!);
+Console.Write("Введите второе число: ");
+number2 = int.Parse(Console.ReadLine()!);
+
+if (Math.Equals(number1,number2)) Console.WriteLine("Введенные числа равнозначны");
+else if (number1 > number2) Console.WriteLine("Первое число больше второго");
+else Console.WriteLine("Втроре число больше первого");
