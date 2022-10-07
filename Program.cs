@@ -60,10 +60,11 @@
 
 //Переменные для ДЗ
 
-int number1, number2;
+int number1, number2, number3, max;
 
 // Домашнее задание
 
+// Первое задание
 Console.WriteLine();
 Console.WriteLine("Задача №2.");
 Console.WriteLine();
@@ -76,3 +77,20 @@ number2 = int.Parse(Console.ReadLine()!);
 if (Math.Equals(number1,number2)) Console.WriteLine("Введенные числа равнозначны");
 else if (number1 > number2) Console.WriteLine("Первое число больше второго");
 else Console.WriteLine("Втроре число больше первого");
+
+// Второе задание
+Console.WriteLine();
+Console.WriteLine("Задача №4.");
+Console.WriteLine();
+
+Console.Write("Введите первое число: ");
+number1 = int.Parse(Console.ReadLine()!);
+Console.Write("Введите второе число: ");
+number2 = int.Parse(Console.ReadLine()!);
+Console.Write("Введите третье число: ");
+number3 = int.Parse(Console.ReadLine()!);
+
+max = Math.Max(number1,number2);
+max = Math.Max(max, number3);
+if (number1 == number2 && number2 == number3) Console.WriteLine("Введенные числа равнозначны");
+else Console.WriteLine("Максимально число - " + max);
