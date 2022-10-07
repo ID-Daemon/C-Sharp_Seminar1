@@ -94,3 +94,14 @@ max = Math.Max(number1,number2);
 max = Math.Max(max, number3);
 if (number1 == number2 && number2 == number3) Console.WriteLine("Введенные числа равнозначны");
 else Console.WriteLine("Максимально число - " + max);
+
+//Третье задание
+Console.WriteLine();
+Console.WriteLine("Задача №6.");
+Console.WriteLine();
+
+Console.Write("Введите первое число: ");
+number1 = int.Parse(Console.ReadLine()!);
+
+if (number1 % 2 == 0) Console.WriteLine("Введенное число четное");
+else Console.WriteLine("Введенное число НЕ четное");
