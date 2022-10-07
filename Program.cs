@@ -100,8 +100,24 @@ Console.WriteLine();
 Console.WriteLine("Задача №6.");
 Console.WriteLine();
 
-Console.Write("Введите первое число: ");
+Console.Write("Введите число: ");
 number1 = int.Parse(Console.ReadLine()!);
 
 if (number1 % 2 == 0) Console.WriteLine("Введенное число четное");
 else Console.WriteLine("Введенное число НЕ четное");
+
+//Четвертое задание
+Console.WriteLine();
+Console.WriteLine("Задача №8.");
+Console.WriteLine();
+
+Console.Write("Введите число: ");
+number1 = int.Parse(Console.ReadLine()!);
+
+if (!Math.Equals(number1 % 2, 0)) number1-=1;
+while (number1 > 2) {
+        Console.Write(number1 + ", ");
+        number1-=2;
+}
+if (!Math.Equals(number1,0)) Console.WriteLine(number1);
+else Console.WriteLine("В введенном диапазоне нет чётных чисел или Вы ввели неверное значение");
